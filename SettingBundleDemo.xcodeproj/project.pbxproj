@@ -13,6 +13,7 @@
 		ED5C32FF24CF2FF8006AA4B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5C32FD24CF2FF8006AA4B1 /* Main.storyboard */; };
 		ED5C330124CF2FFC006AA4B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5C330024CF2FFC006AA4B1 /* Assets.xcassets */; };
 		ED5C330424CF2FFC006AA4B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5C330224CF2FFC006AA4B1 /* LaunchScreen.storyboard */; };
+		ED5C330C24CF3048006AA4B1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ED5C330B24CF3048006AA4B1 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ED5C330024CF2FFC006AA4B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED5C330324CF2FFC006AA4B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED5C330524CF2FFC006AA4B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED5C330B24CF3048006AA4B1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		ED5C32EB24CF2FF8006AA4B1 = {
 			isa = PBXGroup;
 			children = (
+				ED5C330B24CF3048006AA4B1 /* Settings.bundle */,
 				ED5C32F624CF2FF8006AA4B1 /* SettingBundleDemo */,
 				ED5C32F524CF2FF8006AA4B1 /* Products */,
 			);
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5C330C24CF3048006AA4B1 /* Settings.bundle in Resources */,
 				ED5C330424CF2FFC006AA4B1 /* LaunchScreen.storyboard in Resources */,
 				ED5C330124CF2FFC006AA4B1 /* Assets.xcassets in Resources */,
 				ED5C32FF24CF2FF8006AA4B1 /* Main.storyboard in Resources */,
