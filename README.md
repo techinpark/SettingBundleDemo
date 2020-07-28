@@ -10,8 +10,7 @@
 ```sh
 1. 디버그 버전에서 앱 테스트를 위하여 값들을 변경해보고 싶은 경우 
 2. `UserDefaults` 에 저장된 값을 가지고 테스트를 해야하는 경우 
+```
 
-
-#Reference :link: 
-
-- 
+# Reference 🔗
+-  [iOS Setting Bundle을 이용한 앱 테스트 환경 구성하기](https://fernando.kr/ios/2020-07-29-ios-setting-bundle/) 해당 블로그 내용을 참조하시면 도움이 되실거에요 
