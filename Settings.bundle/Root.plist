@@ -2,76 +2,156 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>StringsTable</key>
-	<string>Root</string>
-	<key>PreferenceSpecifiers</key>
-	<array>
-		<dict>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-			<key>Title</key>
-			<string>App 정보</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSTitleValueSpecifier</string>
-			<key>Title</key>
-			<string>앱 버전</string>
-			<key>Key</key>
-			<string>app_version</string>
-			<key>DefaultValue</key>
-			<string>4.6.5</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSTitleValueSpecifier</string>
-			<key>Title</key>
-			<string>빌드 버전</string>
-			<key>Key</key>
-			<string>app_build_version</string>
-			<key>DefaultValue</key>
-			<string>1</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-			<key>Title</key>
-			<string>App 설정</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSToggleSwitchSpecifier</string>
-			<key>Title</key>
-			<string>Firebase Analytics Tracking 보기 </string>
-			<key>Key</key>
-			<string>ga_option</string>
-			<key>DefaultValue</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSMultiValueSpecifier</string>
-			<key>Title</key>
-			<string>서버 선택</string>
-			<key>Key</key>
-			<string>dev_server</string>
-			<key>DefaultValue</key>
-			<string>real-server</string>
-			<key>Values</key>
-			<array>
-				<string>https://test1.server.com</string>
-				<string>https://test2.server.com</string>
-				<string>https://test3.server.com</string>
-				<string>https://test4.server.com</string>
-			</array>
-			<key>Titles</key>
-			<array>
-				<string>TEST_SERVER1</string>
-				<string>TEST_SERVER2</string>
-				<string>TEST_SERVER3</string>
-				<string>TEST_SERVER4</string>
-			</array>
-		</dict>
-	</array>
+    <key>StringsTable</key>
+    <string>Root</string>
+    <key>PreferenceSpecifiers</key>
+    <array>
+        <dict>
+            <key>Type</key>
+            <string>PSTitleValueSpecifier</string>
+            <key>Title</key>
+            <string>⚠️ 모든 설정 값은 앱 종료후, 재 시작해야 제대로 세팅됩니다.     또한 로그아웃, 탈퇴시 해당 설정은 초기화 됩니다.</string>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSGroupSpecifier</string>
+            <key>Title</key>
+            <string>App 정보</string>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSTitleValueSpecifier</string>
+            <key>Title</key>
+            <string>앱 버전</string>
+            <key>Key</key>
+            <string>APP_VERSION</string>
+            <key>DefaultValue</key>
+            <string>1.0(1)</string>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSGroupSpecifier</string>
+            <key>Title</key>
+            <string>App 설정</string>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSToggleSwitchSpecifier</string>
+            <key>Title</key>
+            <string>앱 디버그모드 </string>
+            <key>Key</key>
+            <string>DEBUG_MODE</string>
+            <key>DefaultValue</key>
+            <false/>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSMultiValueSpecifier</string>
+            <key>Title</key>
+            <string>서버 선택</string>
+            <key>Key</key>
+            <string>API_SERVER</string>
+            <key>DefaultValue</key>
+            <string>https://dev.test.com</string>
+            <key>Values</key>
+            <array>
+                <string>https://api.test.com</string>
+                <string>https://dev.test.com</string>
+            </array>
+            <key>Titles</key>
+            <array>
+                <string>Real - 실서버</string>
+                <string>Dev - 개발서버</string>
+                
+            </array>
+        </dict>
+
+        <dict>
+            <key>Type</key>
+            <string>PSGroupSpecifier</string>
+            <key>Title</key>
+            <string>User 정보</string>
+            <key>FooterText</key>
+            <string>유저의 상세정보를 확인해보세요 🔍</string>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSTitleValueSpecifier</string>
+            <key>Title</key>
+            <string>User ID</string>
+            <key>Key</key>
+            <string>MY_USER_ID</string>
+            <key>DefaultValue</key>
+            <string> </string>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSTitleValueSpecifier</string>
+            <key>Title</key>
+            <string>FCM Token</string>
+            <key>Key</key>
+            <string>FCM_TOKEN</string>
+            <key>DefaultValue</key>
+            <string> </string>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSTitleValueSpecifier</string>
+            <key>Title</key>
+            <string>APNS Token</string>
+            <key>Key</key>
+            <string>APNS_TOKEN</string>
+            <key>DefaultValue</key>
+            <string> </string>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSTitleValueSpecifier</string>
+            <key>Title</key>
+            <string>IDFA</string>
+            <key>Key</key>
+            <string>IDFA_TOKEN</string>
+            <key>DefaultValue</key>
+            <string> </string>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSGroupSpecifier</string>
+            <key>Title</key>
+            <string>팝업 가이드 설정</string>
+            <key>FooterText</key>
+            <string>최초 1회 뜨는 가이드 팝업 테스트 이젠 식은죽 먹기 🍯</string>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSToggleSwitchSpecifier</string>
+            <key>Title</key>
+            <string>첫 로그인 가이드</string>
+            <key>Key</key>
+            <string>IS_FIRST_LOGIN</string>
+            <key>DefaultValue</key>
+            <true/>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSToggleSwitchSpecifier</string>
+            <key>Title</key>
+            <string>신규 이벤트 가이드</string>
+            <key>Key</key>
+            <string>IS_FIRST_FEATURE_EVENT</string>
+            <key>DefaultValue</key>
+            <true/>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSToggleSwitchSpecifier</string>
+            <key>Title</key>
+            <string>신규 이벤트 가이드 2 </string>
+            <key>Key</key>
+            <string>IS_FIRST_FEATURE_EVENT_2</string>
+            <key>DefaultValue</key>
+            <true/>
+        </dict>
+    </array>
 </dict>
 </plist>
